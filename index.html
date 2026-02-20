@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Tim Pennings</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Pennings | Portfolio</title>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
 </head>
+
 <body>
-  <h1>Hi, I'm Tim 👋</h1>
-  <p>This is my portfolio website.</p>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">TP</a></h1>
+      <ul class="nav-links">
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Hi, I'm Tim.</h2>
+      <p>Engineering Student | Venture Capital | Energy Systems</p>
+      <a href="pages/projects.html" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Highlight Section -->
+  <section class="section light">
+    <div class="container">
+      <h3>Featured Work</h3>
+
+      <div class="project-preview">
+
+        <div class="project-card">
+          <h4>Airfoil Ground Effect Study</h4>
+          <p>CFD analysis using ANSYS Fluent to study aerodynamic performance.</p>
+        </div>
+
+        <div class="project-card">
+          <h4>LNG Process Design</h4>
+          <p>Designed a 3 cmCR LNG production process using Aspen simulations.</p>
+        </div>
+
+      </div>
+
+      <div class="center">
+        <a href="pages/projects.html" class="btn-outline">See All Projects</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Tim Pennings</p>
+  </footer>
+
 </body>
 </html>
