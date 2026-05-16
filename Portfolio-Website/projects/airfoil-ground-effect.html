@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Airfoil Ground Effect CFD | Tim Pennings</title>
+  <meta
+    name="description"
+    content="Compact project page for a CFD study of the ground effect on a NACA 4415 airfoil using ANSYS Fluent."
+  />
+
+  <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="../index.html" class="logo">TIM PENNINGS</a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#profile">Profile</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+
+      <a href="../index.html#projects" class="btn btn-small btn-outline">Back to projects</a>
+
+      <button class="mobile-menu-button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="project-hero section-padding compact-project-hero">
+      <div class="container project-hero-grid">
+        <div class="fade-in">
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            ANSYS Fluent · CFD · Aerodynamics
+          </p>
+
+          <h1>Airfoil Ground Effect CFD</h1>
+
+          <p class="hero-intro">
+            A CFD study of how ground clearance changes the aerodynamic efficiency of a NACA 4415 airfoil.
+          </p>
+
+          <div class="tag-list">
+            <span>NACA 4415</span>
+            <span>Ground effect</span>
+            <span>Lift-to-drag ratio</span>
+            <span>ANSYS Fluent</span>
+          </div>
+        </div>
+
+        <aside class="project-summary-card fade-in">
+          <p class="card-label">Project snapshot</p>
+          <div class="summary-list compact-summary-list">
+            <div>
+              <span>Goal</span>
+              <strong>Compare lift and drag at different h/c values</strong>
+            </div>
+            <div>
+              <span>Method</span>
+              <strong>2D CFD simulation in ANSYS Fluent</strong>
+            </div>
+            <div>
+              <span>Finding</span>
+              <strong>Lower ground clearance gives higher aerodynamic efficiency</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- VISUAL SUMMARY -->
+    <section class="compact-project-section">
+      <div class="container compact-image-grid fade-in">
+        <figure class="image-card large-image-card">
+          <img
+            src="../assets/img/projects/airfoil/mesh2_zoom.png"
+            alt="Zoomed CFD mesh around the NACA 4415 airfoil"
+          />
+          <figcaption>
+            <strong>Mesh near the airfoil</strong>
+            Refined mesh around the airfoil to capture the flow behaviour close to the surface.
+          </figcaption>
+        </figure>
+
+        <figure class="image-card">
+          <img
+            src="../assets/img/projects/airfoil/coarse_unzoom.png"
+            alt="Computational domain and mesh around the airfoil"
+          />
+          <figcaption>
+            <strong>Computational domain</strong>
+            Domain setup used to compare multiple ground clearances.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SHORT CONTENT -->
+    <section class="compact-project-section">
+      <div class="container compact-project-grid">
+        <article class="compact-text-card fade-in">
+          <p class="section-kicker">Overview</p>
+          <h2>Why I did this</h2>
+          <p>
+            Ground effect is important when wings, drones or vehicles operate close to a surface. In this project, I investigated how the distance to the ground influences lift, drag and aerodynamic efficiency.
+          </p>
+        </article>
+
+        <article class="compact-text-card fade-in">
+          <p class="section-kicker">Method</p>
+          <h2>How it was simulated</h2>
+          <p>
+            A NACA 4415 airfoil was modelled in ANSYS Fluent. Several ground clearances were tested and compared using lift coefficient, drag coefficient and lift-to-drag ratio.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="compact-project-section">
+      <div class="container fade-in">
+        <div class="compact-results-card">
+          <div class="compact-results-text">
+            <p class="section-kicker">Results</p>
+            <h2>Closer to the ground, higher efficiency.</h2>
+            <p>
+              The lift-to-drag ratio is highest at the smallest ground clearance. As h/c increases, the ground effect becomes weaker and the aerodynamic efficiency gradually approaches the free-flight situation.
+            </p>
+          </div>
+
+          <figure class="image-card result-image-card-clean">
+            <img
+              src="../assets/img/projects/airfoil/LD_compare.png"
+              alt="Lift-to-drag ratio versus ground clearance"
+            />
+            <figcaption>
+              <strong>Lift-to-drag ratio vs h/c</strong>
+              The aerodynamic benefit decreases as the airfoil moves further away from the ground.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAKEAWAYS -->
+    <section class="compact-project-section bottom-project-section">
+      <div class="container compact-project-grid">
+        <article class="compact-text-card fade-in">
+          <p class="section-kicker">Takeaway</p>
+          <h2>What this shows</h2>
+          <p>
+            CFD can make aerodynamic behaviour visible before physical testing. The project helped me understand how mesh quality, boundary conditions and post-processing influence engineering conclusions.
+          </p>
+        </article>
+
+        <article class="compact-text-card fade-in">
+          <p class="section-kicker">Tools</p>
+          <h2>Skills used</h2>
+          <p>
+            ANSYS Fluent, airfoil geometry generation, boundary-condition setup, aerodynamic coefficients and result interpretation.
+          </p>
+        </article>
+      </div>
+
+      <div class="container project-navigation compact-navigation fade-in">
+        <a href="../index.html#projects" class="btn btn-outline">Back to all projects</a>
+        <a href="epfl-energy-system.html" class="btn btn-primary">Next project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Tim Pennings · Mechanical Engineering Portfolio</p>
+      <p>Project page · Airfoil Ground Effect CFD</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
