@@ -7,13 +7,9 @@
   <title>Tim Pennings | Mechanical Engineering Portfolio</title>
   <meta
     name="description"
-    content="Portfolio of Tim Pennings, Mechanical Engineering student focused on simulation, energy systems, process modelling and high-tech engineering."
+    content="Portfolio of Tim Pennings, Mechanical Engineering student focused on mechanical design, simulation, energy systems and high-tech engineering."
   />
 
-  <!-- Fonts -->
-  <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
-
-  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/normalize.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
@@ -44,74 +40,88 @@
   <main>
     <!-- HERO -->
     <section class="hero section-padding" id="home">
-      <div class="container hero-grid">
+      <div class="container hero-grid hero-grid-with-photo">
         <div class="hero-content fade-in">
           <p class="eyebrow">
             <span class="status-dot"></span>
-            Mechanical Engineering · High-Tech Engineering
+            Mechanical Engineering · TU Delft · High Tech Engineering
           </p>
 
-            <h1>
-                Curious about
-                <span>how systems work.</span>
-            </h1>
+          <h1>
+            Mechanical engineer
+            <span>in development.</span>
+          </h1>
 
           <p class="hero-intro">
-            I am Tim Pennings, a Mechanical Engineering student at TU Delft, preparing to continue with a master in High Tech Engineering. My work combines simulation, energy-system modelling, process thinking and hands-on design to understand how systems behave and how they can be improved.
+            I am Tim Pennings, a Mechanical Engineering student at TU Delft. I am curious about how technical systems work, from mechanical prototypes to advanced high-tech systems. In my upcoming master in High Tech Engineering, I want to build a deeper understanding of precision systems, simulation and chip-related technology.
           </p>
 
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">Explore projects</a>
-            <a href="#contact" class="btn btn-outline">Contact me</a>
+            <a href="#featured-project" class="btn btn-primary">View main project</a>
+            <a href="#projects" class="btn btn-outline">All projects</a>
           </div>
 
           <div class="tag-list" aria-label="Tools and technical interests">
-            <span>ANSYS Fluent</span>
+            <span>Mechanical design</span>
             <span>SolidWorks</span>
+            <span>ANSYS Fluent</span>
             <span>Python</span>
             <span>MATLAB</span>
-            <span>Aspen Plus</span>
-            <span>Energy modelling</span>
+            <span>Energy systems</span>
           </div>
         </div>
 
-        <aside class="hero-card fade-in" aria-label="Profile summary">
-          <div class="window-bar">
-            <span class="window-dot red"></span>
-            <span class="window-dot yellow"></span>
-            <span class="window-dot green"></span>
+        <div class="hero-image-wrapper fade-in">
+          <img
+            src="assets/img/profile/Headshot.jpeg"
+            alt="Portrait of Tim Pennings in the mountains"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section class="section-padding featured-project-section" id="featured-project">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <div>
+            <p class="section-kicker">Main project</p>
+            <h2>Particle Dryer Prototype</h2>
           </div>
 
-          <div class="hero-card-content">
-            <p class="card-label">Current direction</p>
-            <h2>Simulation-driven engineering with a practical edge.</h2>
+          <p>
+            My Bachelor End Project: a compact dryer for wet polystyrene beads used in flow experiments. The project combines mechanical design, airflow, heating, sensing and energy measurement.
+          </p>
+        </div>
+
+        <a href="projects/tumble-dryer.html" class="featured-project-card fade-in">
+          <div class="featured-project-text">
+            <p class="project-tag">Mechanical design · Prototype · Energy measurement</p>
+
+            <h3>Designing a measurable tumble dryer system</h3>
+
             <p>
-              I enjoy projects where mechanical design, data and modelling come together: from aerodynamic CFD to campus energy optimization and production planning.
+              The goal is to dry wet particles in a controlled and energy-efficient way. The design uses a rotating drum, heated airflow, humidity and temperature sensors, and a measurement strategy to compare drying performance.
             </p>
 
-            <div class="stats-grid">
-              <div class="stat-card">
-                <strong>2026</strong>
-                <span>Expected BSc Mechanical Engineering graduation</span>
-              </div>
-
-              <div class="stat-card">
-                <strong>MSc</strong>
-                <span>High Tech Engineering as next academic step</span>
-              </div>
-
-              <div class="stat-card">
-                <strong>EPFL</strong>
-                <span>Exchange in energy, flow and micro/nano topics</span>
-              </div>
-
-              <div class="stat-card">
-                <strong>Board</strong>
-                <span>Part-time board year at my athletics association</span>
-              </div>
+            <div class="featured-points">
+              <span>SolidWorks design</span>
+              <span>Mass & energy balance</span>
+              <span>ESP32 sensing</span>
+              <span>Prototype testing</span>
             </div>
+
+            <span class="project-link">Open main project →</span>
           </div>
-        </aside>
+
+          <div class="featured-project-visual">
+            <img
+              src="assets/img/projects/tumble-dryer/prototype.png"
+              alt="Particle dryer prototype"
+            />
+          </div>
+        </a>
       </div>
     </section>
 
@@ -120,49 +130,52 @@
       <div class="container">
         <div class="section-heading fade-in">
           <div>
-            <p class="section-kicker">Selected work</p>
-            <h2>Projects worth opening</h2>
+            <p class="section-kicker">Other projects</p>
+            <h2>Selected work</h2>
           </div>
 
           <p>
-            A focused selection of projects that show what companies usually care about: modelling ability, engineering judgment, communication and the skill to turn analysis into decisions.
+            A few projects that show different sides of my engineering background: simulation, energy systems and production planning.
           </p>
         </div>
 
         <div class="project-grid">
           <a href="projects/airfoil-ground-effect.html" class="project-card fade-in">
             <div>
-              <div class="project-icon">✈️</div>
-              <p class="project-tag">ANSYS Fluent · Aerodynamics · CFD</p>
+              <div class="project-icon">CFD</div>
+              <p class="project-tag">ANSYS Fluent · Aerodynamics</p>
               <h3>Airfoil Ground Effect CFD</h3>
               <p>
-                Numerical simulation of a NACA 4415 airfoil close to the ground, comparing lift, drag and aerodynamic efficiency across ground clearances.
+                Simulation of a NACA 4415 airfoil close to the ground, comparing lift, drag and aerodynamic efficiency.
               </p>
             </div>
+
             <span class="project-link">Open project →</span>
           </a>
 
           <a href="projects/epfl-energy-system.html" class="project-card fade-in">
             <div>
-              <div class="project-icon">⚡</div>
-              <p class="project-tag">Energy systems · Heat pumps · Optimization</p>
+              <div class="project-icon">ES</div>
+              <p class="project-tag">Energy systems · Heat pumps</p>
               <h3>EPFL Campus Energy System</h3>
               <p>
-                Campus-scale energy modelling with heat demand clustering, heat recovery scenarios, heat-pump modelling and integrated system optimization.
+                Energy-system modelling with heat demand, heat recovery scenarios and heat-pump integration.
               </p>
             </div>
+
             <span class="project-link">Open project →</span>
           </a>
 
           <a href="projects/production-planning.html" class="project-card fade-in">
             <div>
-              <div class="project-icon">🏭</div>
-              <p class="project-tag">Forecasting · MPS · Inventory</p>
+              <div class="project-icon">PM</div>
+              <p class="project-tag">Forecasting · Production planning</p>
               <h3>Galaxy Watch Production Planning</h3>
               <p>
-                Demand forecasting and supply planning framework using Holt-Winters forecasting, capacity planning, MRP and inventory management.
+                Demand forecasting and supply planning using production schedules, inventory models and MRP.
               </p>
             </div>
+
             <span class="project-link">Open project →</span>
           </a>
         </div>
@@ -174,9 +187,9 @@
       <div class="container profile-grid fade-in">
         <div>
           <p class="section-kicker">Profile</p>
-          <h2>Technical, social and built for learning fast.</h2>
+          <h2>Student engineer with a practical mindset.</h2>
           <p>
-            I am developing myself as an engineer who can combine deep technical work with clear communication and team responsibility. Alongside my master direction in High Tech Engineering, I will do a part-time board year at my athletics association, where I expect to further build leadership, organization and external communication skills.
+            I enjoy understanding how systems work and improving them step by step. I am interested in design, simulation, energy systems and high-tech engineering, especially where theory connects to real hardware.
           </p>
         </div>
 
@@ -184,25 +197,33 @@
           <article class="timeline-item">
             <time>2022 — 2026</time>
             <h3>BSc Mechanical Engineering · TU Delft</h3>
-            <p>Mechanical design, simulation, energy systems, process modelling and multidisciplinary engineering projects.</p>
+            <p>
+              Mechanical design, simulation, energy systems and multidisciplinary engineering projects.
+            </p>
           </article>
 
           <article class="timeline-item">
             <time>2025 — 2026</time>
             <h3>Exchange · EPFL Lausanne</h3>
-            <p>Focus on energy, numerical flow simulation, micro/nano topics, AI applications and management.</p>
+            <p>
+              Courses in energy, numerical flow simulation, micro/nano topics, AI applications and management.
+            </p>
           </article>
 
           <article class="timeline-item">
             <time>Next step</time>
             <h3>Master High Tech Engineering</h3>
-            <p>Continuing towards advanced engineering systems, precision technology and high-tech product development.</p>
+            <p>
+              Building knowledge in advanced engineering systems, precision technology and chip-related systems.
+            </p>
           </article>
 
           <article class="timeline-item">
             <time>Part-time</time>
             <h3>Board year · Athletics association</h3>
-            <p>Combining engineering development with leadership, sponsorship, organization and team responsibility.</p>
+            <p>
+              Developing leadership, organization, communication and external relations experience.
+            </p>
           </article>
         </div>
       </div>
@@ -213,38 +234,46 @@
       <div class="container">
         <div class="section-heading fade-in">
           <div>
-            <p class="section-kicker">Toolkit</p>
-            <h2>Skills I can build on</h2>
+            <p class="section-kicker">Skills</p>
+            <h2>Engineering toolkit</h2>
           </div>
 
           <p>
-            The homepage should feel broad enough for companies, but still specific enough to show real technical direction.
+            Tools and topics I have used in coursework, projects and prototype development.
           </p>
         </div>
 
         <div class="skills-grid">
           <article class="skill-card fade-in">
-            <span>🧩</span>
+            <span>01</span>
             <h3>Mechanical design</h3>
-            <p>SolidWorks, prototyping, design thinking and multidisciplinary project work.</p>
+            <p>
+              SolidWorks, prototyping, component selection and design requirements.
+            </p>
           </article>
 
           <article class="skill-card fade-in">
-            <span>🌪️</span>
+            <span>02</span>
             <h3>Simulation</h3>
-            <p>ANSYS Fluent, COMSOL and numerical analysis for engineering decisions.</p>
+            <p>
+              ANSYS Fluent, COMSOL and numerical analysis for engineering decisions.
+            </p>
           </article>
 
           <article class="skill-card fade-in">
-            <span>📊</span>
-            <h3>Data & programming</h3>
-            <p>Python, MATLAB, Excel, model validation and technical visualization.</p>
+            <span>03</span>
+            <h3>Programming & data</h3>
+            <p>
+              Python, MATLAB, Excel, data processing and technical visualization.
+            </p>
           </article>
 
           <article class="skill-card fade-in">
-            <span>🔥</span>
-            <h3>Energy & process systems</h3>
-            <p>Aspen Plus, heat pumps, energy balances and system optimization.</p>
+            <span>04</span>
+            <h3>Energy systems</h3>
+            <p>
+              Aspen Plus, heat pumps, mass balances, energy balances and optimization thinking.
+            </p>
           </article>
         </div>
       </div>
@@ -253,15 +282,29 @@
     <!-- CONTACT -->
     <section class="section-padding" id="contact">
       <div class="container">
-        <div class="contact-card fade-in">
+        <div class="contact-card fade-in simple-contact-card">
           <div>
-            <h2>Let’s build the next project page.</h2>
+            <p class="section-kicker">Contact</p>
+            <h2>Get in touch</h2>
             <p>
-              This homepage is designed as the entry point. The next step is to create separate pages for the strongest projects, starting with the CFD airfoil project or the EPFL energy-system project.
+              I am interested in internships, engineering projects and opportunities related to mechanical design, simulation, energy systems and high-tech engineering.
             </p>
           </div>
 
-          <a href="mailto:tim.pennings@example.com" class="btn btn-dark">Contact me</a>
+          <div class="contact-links">
+            <a href="mailto:trpennings@student.tudelft.nl" class="contact-link">
+              trpennings@student.tudelft.nl
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/tim-pennings"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+            >
+              LinkedIn · Tim Pennings
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -270,11 +313,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© 2026 Tim Pennings · Mechanical Engineering Portfolio</p>
-      <p>Delft / Lausanne · LinkedIn · GitHub coming soon</p>
+      <p>Delft / Lausanne</p>
     </div>
   </footer>
 
-  <!-- JavaScript -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>
